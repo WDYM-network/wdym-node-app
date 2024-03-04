@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'wdymnode';
+  src: url('fonts/wdymnode.eot?4d070m');
+  src: url('fonts/wdymnode.eot?4d070m#iefix') format('embedded-opentype'),
+    url('fonts/wdymnode.ttf?4d070m') format('truetype'),
+    url('fonts/wdymnode.woff?4d070m') format('woff'),
+    url('fonts/wdymnode.svg?4d070m#wdymnode') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="wdymnode-"],
+[class*=" wdymnode-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wdymnode' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wdymnode-discord:before {
+  content: "\e915";
+}
+
+.wdymnode-duplicate:before {
+  content: "\e916";
+}
+
+.wdymnode-error:before {
+  content: "\e917";
+}
+
+.wdymnode-file:before {
+  content: "\e918";
+}
+
+.wdymnode-grid:before {
+  content: "\e919";
+}
+
+.wdymnode-home:before {
+  content: "\e91a";
+}
+
+.wdymnode-key:before {
+  content: "\e91b";
+}
+
+.wdymnode-refetch:before {
+  content: "\e91c";
+}
+
+.wdymnode-wallet1:before {
+  content: "\e91d";
+}
+
+.wdymnode-x:before {
+  content: "\e91e";
+}
+
+.wdymnode-arrow-down:before {
+  content: "\e907";
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-color;
+    @apply leading-normal;
+    @apply text-[16px]
+  }
+
+  h1 {
+    @apply font-medium;
+    @apply leading-[42px];
+    @apply text-heading;
+    @apply text-[32px];
+    @apply leading-normal;
+    @apply font-fontHeading
+  }
+
+  h2 {
+    @apply font-semibold;
+    @apply leading-[26px];
+    @apply text-heading;
+    @apply text-[30px];
+    @apply leading-normal;
+    @apply tracking-[0.81px];
+    @apply font-fontHeading
+  }
+
+  h3 {
+    @apply font-bold;
+    @apply leading-[34px];
+    @apply text-heading;
+    @apply text-[24px];
+    @apply leading-normal;
+    @apply font-fontHeading
+  }
+
+  button,
+  .btn {
+    @apply rounded-[5px];
+    @apply py-2.5;
+    @apply px-6;
+    @apply font-semibold;
+    @apply bg-primary;
+    @apply leading-[20px];
+    @apply text-white;
+    @apply inline-block;
+    @apply border;
+    @apply text-center;
+    @apply border-primary;
+    @apply text-[14px];
+    @apply font-fontHeading;
+    @apply tracking-[0.1px];
+  }
+
+  .btn-outline {
+    @apply border-primary;
+    @apply bg-transparent
+  }
+
+  button:hover,
+  .btn:hover {
+    @apply border-white;
+    @apply text-primary;
+    @apply bg-white;
+  }
+
+  button:disabled,
+  .btn:disabled {
+    background: linear-gradient(135deg, #2a2113 0%, #2a2113 100%);
+    @apply bg-[#2A2113];
+    @apply border-[#2A2113];
+    @apply text-primary;
+  }
+
+  .btn-outline:hover {
+    @apply border-white
+  }
+
+  input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+  textarea,
+  select {
+    @apply rounded-[8px];
+    @apply border-[1px];
+    @apply border-border;
+    @apply px-6;
+    @apply py-3;
+    @apply w-full;
+    @apply font-normal;
+    @apply text-color;
+    @apply outline-none;
+    @apply leading-[24px];
+    @apply bg-transparent;
+  }
+
+  input:focus,
+  input:focus-visible,
+  textarea:focus-visible,
+  textarea:focus {
+    @apply outline-none;
+    @apply border-primary;
+  }
+
+  label {
+    @apply text-heading;
+  }
+
+  th,
+  td {
+    @apply text-[14px];
+    @apply font-normal;
+    @apply p-4;
+    @apply text-heading;
+    @apply border-b;
+    @apply border-r;
+    @apply border-border;
+    @apply text-left;
+  }
+
+  th:last-child,
+  td:last-child {
+    @apply border-r-0
+  }
+
+  th {
+    @apply bg-[#191714];
+    @apply text-white;
+    @apply font-semibold;
+    @apply uppercase
+  }
+
+  td {
+    @apply py-[16px];
+  }
+
+  tr:last-child td {
+    @apply border-b-0;
+  }
+}
+
+html body {
+  font-family: theme("fontFamily.font"), sans-serif !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+.menu-mobile .active,
+.menu-mobile .active i {
+  background-color: theme("colors.primary") !important;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1470px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+  list-style: disc;
+  line-height: normal;
+}
+
+ol li,
+ul li {
+  padding-bottom: 7px;
+}
+
+ol li:last-child,
+ul li:last-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scroll-bar::-webkit-scrollbar-track {
+  background: rgb(252, 213, 53);
+}
+
+/* Handle */
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    @apply leading-[64px];
+    @apply text-[57px];
+  }
+
+  h2 {
+    @apply text-[54px];
+  }
+
+  h3 {
+    @apply leading-normal;
+    @apply text-[32px];
+  }
+}
+
+.bg-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(40px);
+}
+
+.bg-banner::before {
+  position: absolute;
+  content: "";
+  background-image: url('../../assets/images/new/bg-gradient-img.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 100%;
+  width: 466px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bg-banner::after {
+  position: absolute;
+  content: "";
+  background-image: url('../../assets/images/new/bg-top-img.png');
+  background-repeat: no-repeat;
+  height: 520px;
+  width: 344px;
+  left: 0;
+  top: 0;
+}
